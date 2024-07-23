@@ -1,9 +1,15 @@
 import React from "react";
 
-import "./home.sass";
+import "./Home.scss";
+import Nav from "../components/Nav";
 
 const HomePage = () => {
-  return <div className="main">HomePage</div>;
+  return (
+    <div className="main">
+      <Nav />
+      <div>Homepage</div>
+    </div>
+  );
 };
 
 export default HomePage;
