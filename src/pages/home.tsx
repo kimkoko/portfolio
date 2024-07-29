@@ -8,6 +8,7 @@ const HomePage = () => {
     <div className="main">
       <Nav />
       <div>Homepage</div>
+      <div>about me</div>
     </div>
   );
 };
