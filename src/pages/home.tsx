@@ -22,6 +22,22 @@ const HomePage = () => {
         </div>
         <div className="img">image</div>
       </div>
+
+      <div className="aboutme">
+        <div className="about-title">About Me</div>
+        <div className="about-detail">
+          <div className="about-detail-col">
+            <button>김송이</button>
+            <button>1998.07.28</button>
+            <button>Github</button>
+          </div>
+          <div className="about-detail-col">
+            <button>songikim4464@gmail.com</button>
+            <button>홍콩이공대</button>
+            <button>Resume</button>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
