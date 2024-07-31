@@ -124,14 +124,27 @@
         color: #000;
         margin-bottom: 40px;
         cursor: pointer;
-        transition: background-color 0.5s ease;
+        transition: all 0.5s ease;
 
         &:last-child {
           margin-bottom: 0px;
         }
+      }
 
-        &:hover {
-          background-color: #fff;
+      &.link {
+        button {
+          transition: background-color 0.5s ease;
+
+          a {
+            text-decoration: none;
+            &:visited {
+              color: #000;
+            }
+          }
+
+          &:hover {
+            background-color: #fff;
+          }
         }
       }
     }

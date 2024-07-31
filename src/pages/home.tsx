@@ -29,11 +29,15 @@ const HomePage = () => {
           <div className="about-detail-col">
             <button>김송이</button>
             <button>1998.07.28</button>
-            <button>Github</button>
-          </div>
-          <div className="about-detail-col">
-            <button>songikim4464@gmail.com</button>
             <button>홍콩이공대</button>
+          </div>
+          <div className="about-detail-col link">
+            <button>songikim4464@gmail.com</button>
+            <button>
+              <a href="https://github.com/kimkoko" target="_blank">
+                Github
+              </a>
+            </button>
             <button>Resume</button>
           </div>
         </div>
