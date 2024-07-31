@@ -18,6 +18,7 @@ const HomePage = () => {
             suspendisse non vitae fermentum, pharetra arcu. Viverra a morbi ut
             donec in. Ac diam, at sed cras nisi.
           </div>
+          <button>Learn More</button>
         </div>
         <div className="img">image</div>
       </div>
