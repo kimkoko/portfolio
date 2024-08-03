@@ -2,6 +2,7 @@ import React from "react";
 
 import "./Home.scss";
 import Nav from "../components/Nav";
+import Skills from "./Skills";
 
 const HomePage = () => {
   return (
@@ -42,6 +43,7 @@ const HomePage = () => {
           </div>
         </div>
       </div>
+      <Skills />
     </div>
   );
 };

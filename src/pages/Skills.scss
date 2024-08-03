@@ -1,0 +1,88 @@
+.container {
+  background-color: #eff7ff;
+  height: 750px;
+  margin-top: 160px;
+  position: relative;
+  z-index: -2;
+
+  .skills-title {
+    padding-top: 40px;
+    color: #0048ff;
+    font-size: 40px;
+    font-weight: 700;
+  }
+
+  .circle-1 {
+    position: absolute;
+    left: 100px;
+    width: 200px;
+    height: 200px;
+    background: #d5e4ff;
+    border-radius: 50%;
+    transform: matrix(-0.76, 0.65, -0.73, -0.68, 0, 0);
+    z-index: -1;
+  }
+  .circle-2 {
+    position: absolute;
+    left: 300px;
+    top: 250px;
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    background: rgba(64, 123, 255, 0.1);
+    transform: matrix(-0.76, 0.65, -0.73, -0.68, 0, 0);
+    z-index: -1;
+  }
+
+  .skills-detail {
+    height: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: "Gowun Dodum", sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+
+    .skills-detail-col {
+      ul {
+        li {
+          display: flex;
+          align-items: center;
+          list-style: none;
+          margin-bottom: 40px;
+
+          span {
+            border: 2px solid #0048ff;
+            border-radius: 100px;
+            padding: 12px 60px;
+            margin-left: 40px;
+          }
+        }
+      }
+    }
+  }
+
+  .circle-3 {
+    position: absolute;
+    right: 100px;
+    top: 500px;
+    width: 200px;
+    height: 200px;
+    background: #d5e4ff;
+    border-radius: 50%;
+    transform: matrix(-0.76, 0.65, -0.73, -0.68, 0, 0);
+    z-index: -1;
+  }
+
+  .circle-4 {
+    position: absolute;
+    right: 300px;
+    top: 500px;
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    background: rgba(64, 123, 255, 0.1);
+    transform: matrix(-0.76, 0.65, -0.73, -0.68, 0, 0);
+    z-index: -1;
+  }
+}
