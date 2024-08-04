@@ -3,6 +3,7 @@ import React from "react";
 import "./Home.scss";
 import Nav from "../components/Nav";
 import Skills from "./Skills";
+import Exps from "./Exps";
 
 const HomePage = () => {
   return (
@@ -44,6 +45,7 @@ const HomePage = () => {
         </div>
       </div>
       <Skills />
+      <Exps />
     </div>
   );
 };
