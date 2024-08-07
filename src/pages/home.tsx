@@ -4,6 +4,7 @@ import "./Home.scss";
 import Nav from "../components/Nav";
 import Skills from "./Skills";
 import Exps from "./Exps";
+import Projects from "./Projects";
 
 const HomePage = () => {
   return (
@@ -46,6 +47,7 @@ const HomePage = () => {
       </div>
       <Skills />
       <Exps />
+      <Projects />
     </div>
   );
 };
