@@ -2,23 +2,33 @@ import React from "react";
 
 import "./Nav.scss";
 
-const Nav = () => {
+interface NavProps {
+  setActiveSection: (section: string) => void;
+}
+
+const Nav: React.FC<NavProps> = ({ setActiveSection }) => {
   return (
     <div className="nav-bar">
       <div className="nav">
         <div className="logo">Kim Songi's portfolio</div>
         <ul className="menu">
           <li>
-            <a href="#">About Me</a>
+            <button onClick={() => setActiveSection("aboutme")}>
+              About Me
+            </button>
           </li>
           <li>
-            <a href="#">Skills</a>
+            <button onClick={() => setActiveSection("skills")}>Skills</button>
           </li>
           <li>
-            <a href="#">Experiences</a>
+            <button onClick={() => setActiveSection("exps")}>
+              Experiences
+            </button>
           </li>
           <li>
-            <a href="#">Projects</a>
+            <button onClick={() => setActiveSection("projects")}>
+              Projects
+            </button>
           </li>
         </ul>
       </div>

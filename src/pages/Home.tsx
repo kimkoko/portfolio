@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 import "./Home.scss";
 import Nav from "../components/Nav";
@@ -6,10 +6,32 @@ import Skills from "./Skills";
 import Exps from "./Exps";
 import Projects from "./Projects";
 
-const HomePage = () => {
+const HomePage: React.FC = () => {
+  const [activeSection, setActiveSection] = useState<string | null>("main");
+
+  useEffect(() => {
+    if (activeSection) {
+      const element = document.getElementById(activeSection);
+      const navHeight = 100;
+
+      if (element) {
+        const elementPosition =
+          element.getBoundingClientRect().top + window.scrollY;
+        const offsetPosition = elementPosition - navHeight;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: "smooth",
+        });
+
+        setActiveSection(null);
+      }
+    }
+  }, [activeSection]);
+
   return (
-    <div className="main">
-      <Nav />
+    <div className="main" id="main">
+      <Nav setActiveSection={setActiveSection} />
       <div className="content">
         <div className="text">
           <div className="title">
@@ -21,12 +43,14 @@ const HomePage = () => {
             suspendisse non vitae fermentum, pharetra arcu. Viverra a morbi ut
             donec in. Ac diam, at sed cras nisi.
           </div>
-          <button>Learn More</button>
+          <button onClick={() => setActiveSection("aboutme")}>
+            Learn More
+          </button>
         </div>
         <div className="img">image</div>
       </div>
 
-      <div className="aboutme">
+      <div className="aboutme" id="aboutme">
         <div className="about-title">About Me</div>
         <div className="about-detail">
           <div className="about-detail-col">
@@ -45,9 +69,15 @@ const HomePage = () => {
           </div>
         </div>
       </div>
-      <Skills />
-      <Exps />
-      <Projects />
+      <div id="skills">
+        <Skills />
+      </div>
+      <div id="exps">
+        <Exps />
+      </div>
+      <div id="projects">
+        <Projects />
+      </div>
     </div>
   );
 };
