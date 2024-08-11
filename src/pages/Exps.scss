@@ -11,39 +11,4 @@
     font-weight: 700;
     margin-bottom: 70px;
   }
-
-  .exp-detail-container {
-    width: 1280px;
-    height: auto;
-    padding: 60px;
-    margin-top: 20px;
-    background: #fff5ff;
-    font-family: "Gowun Dodum", sans-serif;
-    text-align: left;
-    border-top-right-radius: 300px;
-    border-bottom-right-radius: 300px;
-
-    .exp-detail-title {
-      font-size: 30px;
-      font-weight: 700;
-      color: #002b9a;
-    }
-
-    .exp-detail-skill {
-      margin-left: -30px;
-      ul {
-        text-align: left;
-        display: flex;
-        font-size: 20px;
-        color: #0048ff;
-        li {
-          list-style: none;
-          padding: 10px 30px;
-          border: 2px solid #0048ff;
-          border-radius: 100px;
-          margin-right: 16px;
-        }
-      }
-    }
-  }
 }
