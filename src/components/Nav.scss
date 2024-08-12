@@ -21,6 +21,7 @@
       color: #09153f;
       font-size: 24px;
       font-weight: 600;
+      white-space: nowrap;
     }
 
     .menu {
@@ -33,6 +34,7 @@
 
         button {
           margin-left: 160px;
+          white-space: nowrap;
           text-decoration: none;
           color: #333;
           font-size: 20px;
