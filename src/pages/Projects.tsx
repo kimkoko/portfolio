@@ -11,10 +11,10 @@ const Projects: React.FC = () => {
         <ProjContainer
           title="레시피 소개 웹사이트 (YAMSpoon)"
           images={[
-            "images/yam_intro.png",
-            "images/yam_main.png",
-            "images/yam_reci.png",
-            "images/yam_ref.png",
+            "https://kimkoko.github.io/portfolio/images/yam_intro.png",
+            "https://kimkoko.github.io/portfolio/images/yam_main.png",
+            "https://kimkoko.github.io/portfolio/images/yam_reci.png",
+            "https://kimkoko.github.io/portfolio/images/yam_ref.png",
           ]}
           content={
             <>
@@ -63,10 +63,10 @@ const Projects: React.FC = () => {
         <ProjContainer
           title="요리 서적 쇼핑몰 웹사이트 (Butter & Better)"
           images={[
-            "/images/bb_intro.png",
-            "/images/bb_home.png",
-            "/images/bb_user.png",
-            "/images/bb_cert.png",
+            "https://kimkoko.github.io/portfolio/images/bb_intro.png",
+            "https://kimkoko.github.io/portfolio/images/bb_home.png",
+            "https://kimkoko.github.io/portfolio/images/bb_user.png",
+            "https://kimkoko.github.io/portfolio/images/bb_cert.png",
           ]}
           content={
             <>
@@ -132,9 +132,9 @@ const Projects: React.FC = () => {
         <ProjContainer
           title="Knowledge Graph Based Question Answering Leaderboard"
           images={[
-            "images/kgqa_intro.png",
-            "images/kgqa_result.png",
-            "images/kgqa_web.png",
+            "https://kimkoko.github.io/portfolio/images/kgqa_intro.png",
+            "https://kimkoko.github.io/portfolio/images/kgqa_result.png",
+            "https://kimkoko.github.io/portfolio/images/kgqa_web.png",
           ]}
           content={
             <>

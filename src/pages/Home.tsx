@@ -56,7 +56,10 @@ const HomePage: React.FC = () => {
           </button>
         </div>
         <div className="img">
-          <img src="/images/main.jpg" alt="main image" />
+          <img
+            src="https://kimkoko.github.io/portfolio/images/main.jpg"
+            alt="main image"
+          />
         </div>
       </div>
 
