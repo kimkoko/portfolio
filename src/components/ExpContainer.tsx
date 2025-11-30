@@ -14,21 +14,23 @@ const ExpContainer: React.FC<ExpContainerProps> = ({
   skills,
 }) => {
   return (
-    <div className="exp-detail-container">
-      <div className="exp-detail-title">{title}</div>
-      <div className="exp-detial-content">
-        <ul>
+    <div className="exp-card">
+      <div className="card-header">
+        <h3 className="card-title">{title}</h3>
+      </div>
+      <div className="card-body">
+        <ul className="content-list">
           {content.map((item, index) => (
             <li key={index}>{item}</li>
           ))}
         </ul>
-      </div>
-      <div className="exp-detail-skill">
-        <ul>
-          {skills.map((item, index) => (
-            <li key={index}>{item}</li>
+        <div className="skills-wrapper">
+          {skills.map((skill, index) => (
+            <span className="skill-tag" key={index}>
+              {skill}
+            </span>
           ))}
-        </ul>
+        </div>
       </div>
     </div>
   );

@@ -1,18 +1,58 @@
-@import url("https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Gowun+Dodum&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Gowun+Dodum&family=Inter:wght@400;600;700&display=swap");
+
+:root {
+  --primary-color: #0048ff;
+  --secondary-color: #d6008d;
+  --bg-color: #f8f9fa;
+  --text-color: #333333;
+  --text-secondary: #555555;
+  --white: #ffffff;
+  --glass-bg: rgba(255, 255, 255, 0.8);
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.15);
+  --radius-md: 12px;
+  --radius-lg: 24px;
+  --radius-full: 9999px;
+  --font-main: "Inter", "Gowun Dodum", sans-serif;
+  --font-heading: "Do Hyeon", "Inter", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
 
 body {
   margin: 0;
-  font-family: "Do Hyeon", "Gowun Dodum", sans-serif;
+  font-family: var(--font-main);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
 button {
-  font-family: "Gowun Dodum", sans-serif;
-  font-weight: 700;
+  font-family: var(--font-main);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }

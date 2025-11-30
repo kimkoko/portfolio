@@ -1,14 +1,15 @@
-import React, { ReactNode } from "react";
-import { Splide, SplideSlide } from "@splidejs/react-splide";
-
+import React from "react";
 import "./ProjContainer.scss";
+
+// Import Splide
+import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
 
 interface ProjContainerProps {
   title: string;
   images: string[];
-  content: ReactNode;
-  links: [string[], string[]];
+  content: React.ReactNode;
+  links: string[][];
 }
 
 const ProjContainer: React.FC<ProjContainerProps> = ({
@@ -18,39 +19,47 @@ const ProjContainer: React.FC<ProjContainerProps> = ({
   links,
 }) => {
   return (
-    <div className="proj-detail-container">
-      <div className="proj-detail-title">{title}</div>
-      <div className="proj-detail-content">
-        <div className="proj-detail-img">
+    <div className="project-card">
+      <div className="project-header">
+        <h3 className="project-title">{title}</h3>
+      </div>
+
+      <div className="project-body">
+        <div className="project-gallery">
           <Splide
             options={{
               rewind: true,
-              perPage: 1,
+              width: "100%",
+              gap: "1rem",
+              arrows: true,
+              pagination: true,
             }}
           >
             {images.map((image, index) => (
               <SplideSlide key={index}>
-                <img
-                  src={image}
-                  alt={`Slide ${index}`}
-                  className="proj-slide-img"
-                />
+                <div className="image-wrapper">
+                  <img src={image} alt={`${title} screenshot ${index + 1}`} />
+                </div>
               </SplideSlide>
             ))}
           </Splide>
         </div>
-        <div className="proj-detail-left">
-          <div className="proj-detail-text">{content}</div>
-          <div className="proj-detail-link">
-            <ul>
-              {links.map((link, index) => (
-                <li key={index}>
-                  <a href={link[0]} target="_blank" rel="noreferrer">
-                    {link[1]}
-                  </a>
-                </li>
-              ))}
-            </ul>
+
+        <div className="project-info">
+          <div className="project-content">{content}</div>
+
+          <div className="project-links">
+            {links.map((link, index) => (
+              <a
+                key={index}
+                href={link[0]}
+                target="_blank"
+                rel="noreferrer"
+                className="project-link"
+              >
+                {link[1]}
+              </a>
+            ))}
           </div>
         </div>
       </div>
